@@ -3,7 +3,7 @@ from htmlTemplates import css, bot_template, user_template, hide_streamlit_style
 
 def main():
     st.set_page_config(page_title="MJ Schonhoeft",
-                       page_icon="pics\Logo small With background 2.png")
+                       page_icon="pics/Logo small With background 2.png")
     
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
