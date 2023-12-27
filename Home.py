@@ -11,7 +11,7 @@ def main():
     colT1,colT2 = st.columns([1,2])
     with colT2:
         st.title('MJ Schonhoeft')
-        st.image('pics\croped.png',width=300)
+        st.image('pics/croped.png',width=300)
 
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
