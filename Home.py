@@ -16,12 +16,12 @@ def main():
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
     st.text('I am a Data Science Analyst at Deloitte.')
-    st.text('I am passionate about ensuring I create AI applications that best serve the end\nusers.')
+    st.text('I am passionate about creating create AI applications that best serve the needs of end users.')
     st.write('---')
     st.header("Projects:")
     st.subheader(" - UN Buget Forcasting")    
-    st.subheader(" - BallroomBot")
-    st.text("This is an LLM application that tells you information based on the American Dance Sylabus")
+    st.subheader(" - Country Dance Chatbot")
+    st.text("This is an LLM application that tells you information based on the UCWDC dance rules")
 
 
 
