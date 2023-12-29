@@ -91,9 +91,9 @@ def main():
 
         #get_conversation_chain(vectorstore)
         st.session_state.conversation = get_conversation_chain(vectorstore)
-    user_question = st.text_input("Ask a question about the UCWDC Rules:")
-    if user_question:
-        handle_userinput(user_question)
+        user_question = st.text_input("Ask a question about the UCWDC Rules:")
+        if user_question:
+            handle_userinput(user_question)
 
     # with st.sidebar:
     #     st.subheader("Your documents")
