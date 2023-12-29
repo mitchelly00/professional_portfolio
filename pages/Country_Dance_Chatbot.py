@@ -69,7 +69,6 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
     st.set_page_config(page_title="Chat with UCWDC Rules",
                        page_icon="🤠")
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
@@ -82,14 +81,16 @@ def main():
 
     st.header("Chat the UCWDC rules documents :scroll:")
 
-    #get vector store
-    embedding_function = OpenAIEmbeddings(model="text-search-ada-doc-001")
-    vectorstore = FAISS.load_local("FAISS",embedding_function)
-
-    #get_conversation_chain(vectorstore)
-    st.session_state.conversation = get_conversation_chain(vectorstore)
 
 
+    open_api_key = st.text_input("Add your OpenAI API key to interact with the rulebook!")
+    if open_api_key:
+            #get vector store
+        embedding_function = OpenAIEmbeddings(model="text-search-ada-doc-001")
+        vectorstore = FAISS.load_local("FAISS",embedding_function)
+
+        #get_conversation_chain(vectorstore)
+        st.session_state.conversation = get_conversation_chain(vectorstore)
     user_question = st.text_input("Ask a question about the UCWDC Rules:")
     if user_question:
         handle_userinput(user_question)
