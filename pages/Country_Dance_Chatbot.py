@@ -68,7 +68,7 @@ def handle_userinput(user_question):
 
 def main():
     
-    st.set_page_config(page_title="Chat with UCWDC Rules",
+    st.set_page_config(page_title="Chat with the UCWDC Rules",
                        page_icon="🤠")
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
@@ -78,7 +78,7 @@ def main():
     # if "chat_history" not in st.session_state:
     #     st.session_state.chat_history = None
 
-    st.header("Chat the UCWDC rules documents :scroll:")
+    st.header("Chat with the UCWDC rules documents :scroll:")
 
 
 
