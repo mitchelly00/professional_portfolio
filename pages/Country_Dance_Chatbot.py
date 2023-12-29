@@ -87,7 +87,7 @@ def main():
         st.session_state.openai_api_key = openai_api_key
         #get vector store
         embedding_function = OpenAIEmbeddings(openai_api_key=st.session_state.openai_api_key,model="text-search-ada-doc-001")
-        vectorstore = FAISS.load_local("FAISS",embedding_function)
+        vectorstore = FAISS.load_local("FAISS_Country",embedding_function)
 
         #get_conversation_chain(vectorstore)
         st.session_state.conversation = get_conversation_chain(vectorstore)
