@@ -83,7 +83,7 @@ def main():
 
 
     openai_api_key = st.text_input("Add your OpenAI API key to interact with the rulebook!")
-    if open_api_key:
+    if openai_api_key:
         st.session_state.open_api_key = openai_api_key
         #get vector store
         embedding_function = OpenAIEmbeddings(openai_api_key=openai_api_key,model="text-search-ada-doc-001")
