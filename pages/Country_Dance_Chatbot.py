@@ -39,7 +39,7 @@ from htmlTemplates import css, bot_template, user_template
 
 
 def get_conversation_chain(vectorstore):
-    llm = ChatOpenAI(st.session_state.openai_api_key)
+    llm = ChatOpenAI(openai_api_key=st.session_state.openai_api_key)
     # llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":0.5, "max_length":512})
 
     memory = ConversationBufferMemory(
