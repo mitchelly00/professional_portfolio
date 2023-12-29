@@ -19,7 +19,7 @@ def main():
     st.text('I am passionate about creating create AI applications that best serve the needs of \nend users.')
     st.write('---')
     st.header("Projects:")
-    st.subheader(" - UN Buget Forcasting")    
+    # st.subheader(" - UN Buget Forcasting")    
     st.subheader(" - Country Dance Chatbot")
     st.text("This is an LLM application that tells you information based on the UCWDC dance rules")
 
