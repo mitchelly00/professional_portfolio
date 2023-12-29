@@ -16,7 +16,7 @@ def main():
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
     st.text('I am a Data Science Analyst at Deloitte.')
-    st.text('I am passionate about creating create AI applications that best serve the needs of end users.')
+    st.text('I am passionate about creating create AI applications that best serve the needs of /nend users.')
     st.write('---')
     st.header("Projects:")
     st.subheader(" - UN Buget Forcasting")    
