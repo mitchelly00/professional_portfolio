@@ -20,11 +20,10 @@ def main():
     '''
     st.markdown(text)
     st.header("Projects:")
-    # st.subheader(" - UN Buget Forcasting")    
-    st.subheader(" - Country Dance Chatbot")
-    st.text("This is an LLM application that tells you information based on the UCWDC dance rules")
-
-
+    text2 = '''Country Dance ChatBot
+    \n     -This is an LLM application that tells you information based on the UCWDC dance rules.
+    '''
+    st.markdown(text2)
 
 
 if __name__ == '__main__':
