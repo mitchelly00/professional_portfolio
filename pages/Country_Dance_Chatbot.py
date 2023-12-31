@@ -86,15 +86,13 @@ def main():
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
     \nFeedback:
-    \n - I would love to hear how I am doing. Please give your feedback here
-    \n 
-
-    
+    \n - I would love to hear how I am doing. Please give your feedback here  
     '''
 
     colT1,colT2 = st.columns([1,10])
     with colT2:
         st.markdown(text3)
+        st.text(" ")
 
 
     
