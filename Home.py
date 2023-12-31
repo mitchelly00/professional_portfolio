@@ -21,7 +21,7 @@ def main():
     st.markdown(text)
     st.header("Projects:")
     text2 = '''Country Dance ChatBot
-    \n     -This is an LLM application that tells you information based on the UCWDC dance rules.
+    \n - This is an LLM application that tells you information based on the UCWDC dance rules.
     '''
     st.markdown(text2)
 
