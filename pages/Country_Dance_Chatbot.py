@@ -86,7 +86,7 @@ def main():
     text3 = '''     Disclaimer: This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
     '''
 
-    colT1,colT2 = st.columns([1,5])
+    colT1,colT2 = st.columns([1,8])
     with colT2:
         st.markdown(text3)
 
