@@ -94,7 +94,7 @@ def main():
         st.markdown(text3)
         st.text(" ")
 
-
+    st.text(" ")
     
 
     load_dotenv(Path("/home/ec2-user/.env"))
