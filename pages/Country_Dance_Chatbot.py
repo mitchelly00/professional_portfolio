@@ -85,7 +85,13 @@ def main():
 
     text3 = '''     Disclaimer: This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
     '''
-    st.markdown(text3)
+
+    colT1,colT2 = st.columns([1,2])
+    with colT2:
+        st.markdown(text3)
+
+
+    
 
     load_dotenv(Path("/home/ec2-user/.env"))
     openai_api_key = os.getenv("OPENAI_API_KEY")
