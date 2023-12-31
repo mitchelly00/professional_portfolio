@@ -16,8 +16,8 @@ def main():
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
     text = '''I am a Data Science Analyst at Deloitte.  
-  
-    I am passionate about creating AI applications that best serve the needs of end users.
+    \nI am passionate about creating AI applications  
+    that best serve the needs of end users.
     '''
     st.markdown(text)
     st.header("Projects:")
