@@ -81,8 +81,12 @@ def main():
     # if "chat_history" not in st.session_state:
     #     st.session_state.chat_history = None
 
-    st.header("Chat with the UCWDC rules documents :scroll:")
+    st.header("Chat with the UCWDC rules :scroll:")
 
+    text3 = '''Disclaimer: This tool is not affliated with the UCWDC. 
+    \nThe answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
+    '''
+    st.markdown(text3)
 
     load_dotenv(Path("/home/ec2-user/.env"))
     openai_api_key = os.getenv("OPENAI_API_KEY")
