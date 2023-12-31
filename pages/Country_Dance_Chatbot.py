@@ -80,6 +80,12 @@ def main():
 
     st.header("Chat with the UCWDC rules documents :scroll:")
 
+    import os                                                                                                                                                                                                          
+    from dotenv import load_dotenv, find_dotenv
+    from pathlib import Path
+    load_dotenv(Path("/home/ec2-user/.env"))
+    st.write(os.getenv("OPENAI_API_KEY"))
+
 
 
     openai_api_key = st.text_input("Add your OpenAI API key to interact with the rulebook!")
