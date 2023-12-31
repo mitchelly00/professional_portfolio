@@ -5,6 +5,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
+import os                                                                                                                                                                                                          
+from dotenv import load_dotenv, find_dotenv
+from pathlib import Path
 
 
 #testing wasnt working very well. To trouble shoot
@@ -80,15 +83,10 @@ def main():
 
     st.header("Chat with the UCWDC rules documents :scroll:")
 
-    import os                                                                                                                                                                                                          
-    from dotenv import load_dotenv, find_dotenv
-    from pathlib import Path
+
     load_dotenv(Path("/home/ec2-user/.env"))
-    st.write(os.getenv("OPENAI_API_KEY"))
+    openai_api_key = os.getenv("OPENAI_API_KEY")
 
-
-
-    openai_api_key = st.text_input("Add your OpenAI API key to interact with the rulebook!")
     if openai_api_key:
         st.session_state.openai_api_key = openai_api_key
         #get vector store
