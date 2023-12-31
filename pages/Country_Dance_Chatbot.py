@@ -83,7 +83,8 @@ def main():
 
     st.header("Chat with the UCWDC rules :scroll:")
 
-    text3 = '''- Disclaimer: This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
+    text3 = '''Disclaimer:
+    \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
     '''
 
     colT1,colT2 = st.columns([1,10])
