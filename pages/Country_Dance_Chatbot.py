@@ -105,7 +105,7 @@ def main():
         #get vector store
         embedding_function = OpenAIEmbeddings(openai_api_key=st.session_state.openai_api_key,model="text-search-ada-doc-001")
         vectorstore = FAISS.load_local("FAISS_Country",embedding_function)
-
+        st.text(" ")
         #get_conversation_chain(vectorstore)
         st.session_state.conversation = get_conversation_chain(vectorstore)
         user_question = st.text_input("Ask a question about the UCWDC Rules:")
