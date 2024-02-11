@@ -83,7 +83,7 @@ def main():
     # if "chat_history" not in st.session_state:
     #     st.session_state.chat_history = None
 
-    st.header("Chat with the UCWDC rules :scroll:")
+    st.header("🤠 Chat with the UCWDC rules")
 
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)

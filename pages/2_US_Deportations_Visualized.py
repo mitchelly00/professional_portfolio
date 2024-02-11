@@ -74,11 +74,11 @@ fig4.update_layout(bargap=0.2)
 
 def main():
     st.set_page_config(page_title="US Deportations Visualized",
-                       page_icon="pics/Logo small With background 2.png")
+                       page_icon=":earth_americas:")
     
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
-    st.title('US Deportations Visualized')
+    st.title(':earth_americas: US Deportations Visualized')
 
     st.header("Exploratory Analysis")
     
