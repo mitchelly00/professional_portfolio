@@ -8,6 +8,7 @@ from htmlTemplates import css, bot_template, user_template
 import os                                                                                                                                                                                                          
 from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
+from htmlTemplates import hide_streamlit_style
 
 
 #testing wasnt working very well. To trouble shoot
@@ -44,6 +45,7 @@ from pathlib import Path
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI(openai_api_key=st.session_state.openai_api_key)
     # llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":0.5, "max_length":512})
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
@@ -97,8 +99,9 @@ def main():
     st.text(" ")
     
 
-    load_dotenv(Path("/home/ec2-user/.env"))
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    #load_dotenv(Path("/home/ec2-user/.env"))
+    load_dotenv()
+    openai_api_key = os.getenv("openai_api_key")
 
     if openai_api_key:
         st.session_state.openai_api_key = openai_api_key
