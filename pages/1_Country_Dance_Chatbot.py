@@ -103,7 +103,6 @@ def main():
     load_dotenv("/home/ec2-user/.env")
     #load_dotenv()
     openai_api_key = os.getenv("OPENAI_API_KEY")
-    st.write(openai_api_key)
 
     if openai_api_key:
         st.session_state.openai_api_key = openai_api_key
