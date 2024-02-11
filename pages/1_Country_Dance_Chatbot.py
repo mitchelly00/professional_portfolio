@@ -100,8 +100,8 @@ def main():
     st.text(" ")
     
 
-    #load_dotenv(Path("/home/ec2-user/.env"))
-    load_dotenv()
+    load_dotenv(Path("/home/ec2-user/.env"))
+    #load_dotenv()
     openai_api_key = os.getenv("openai_api_key")
 
     if openai_api_key:
