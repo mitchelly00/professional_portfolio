@@ -28,7 +28,7 @@ fig2 = px.bar(df_visual_recent, x='Political Party', y='Total Deportations',
 #Hypothesis testing
 
 #dem distributions
-df_dem = df_visual[df_visual['Political Party']=='Democrat']
+df_dem = df_visual_recent[df_visual_recent['Political Party']=='Democrat']
 
 
 fig3 = px.histogram(df_dem, x="Total Deportations",nbins=10,title="Distribution of the number of deportations a year per Democrat presidential administration")
@@ -37,7 +37,7 @@ fig3.update_layout(bargap=0.2)
 
 #republican distribtuion 
 
-df_rep = df_visual[df_visual['Political Party']=='Republican']
+df_rep = df_visual_recent[df_visual_recent['Political Party']=='Republican']
 
 fig4 = px.histogram(df_rep, x="Total Deportations",nbins=10,
                     title="Distribution of the number of deportations a year per Republican presidential administration",
