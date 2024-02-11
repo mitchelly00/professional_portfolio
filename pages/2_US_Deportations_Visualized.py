@@ -83,8 +83,8 @@ def main():
     st.header("Hypothesis Testing")
 
     text2 = '''This dataset qualifies for an ANOVA test since there is over 30 data points in each category with:
-     \n - Number of Republican years in the dataset = 39
      \n - Number of Democrat years in the dataset = 43
+     \n - Number of Republican years in the dataset = 39
 
      \nThe distributions of the deportations per year broken down by political administration is below.
     '''
