@@ -100,7 +100,7 @@ def main():
     st.text(" ")
     
 
-    load_dotenv(Path("/home/ec2-user/.env"))
+    load_dotenv("/home/ec2-user/.env")
     #load_dotenv()
     openai_api_key = os.getenv("openai_api_key")
     st.write(openai_api_key)
