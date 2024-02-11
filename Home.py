@@ -25,9 +25,7 @@ def main():
     text2 = '''Country Dance ChatBot 🤠
     \n - This is an LLM application that answers your questions from the UCWDC country dance rules.
     \n US Deportations Visualized :earth_americas:
-    \n - This is a data project to show the correlation between immigration and president administration
-    \n Cloud Architecture :cloud:
-    \n - A page that breaks down the AWS services used to host this application
+    \n - This data project shows the correlation between immigration and pesidential administrations' political party
     '''
     st.markdown(text2)
 

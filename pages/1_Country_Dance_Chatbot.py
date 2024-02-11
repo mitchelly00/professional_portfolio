@@ -87,8 +87,9 @@ def main():
 
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
-    \nFeedback:
-    \n - I would love to hear how I am doing. Please give your feedback here  
+    \nDirections:
+    \n - Use the task bar below to ask questions about the UCWDC rules
+    \n - An example could be: "Name the 6 different line dance styles"
     '''
 
     colT1,colT2 = st.columns([1,10])
