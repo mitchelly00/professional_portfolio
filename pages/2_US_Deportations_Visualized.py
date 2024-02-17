@@ -120,9 +120,9 @@ def main():
 
     st.write(text_stat)
 
-    st.write("ANOVA Statistic:",statistic)
-    st.write("P-value:",p_value)
-    st.write("alpha:",alpha)
+    st.write("\n- ANOVA Statistic:",statistic)
+    st.write("\n- P-value:",p_value)
+    st.write("\n- alpha:",alpha)
 
     text3 = '''
     Now, to interpret these results:
