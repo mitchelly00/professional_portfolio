@@ -76,7 +76,9 @@ def main():
     st.header("Abstract")
     text1 = '''
     \n Undocumented immigration to the US has been a common news headline in national politics. This page asks if there is a difference between 
-    undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is **no correlation between political party and number of deportations.** 
+    undocumented immigration rates between presidential political parties. 
+    
+    \n The results of the quick analysis show that there is ****no correlation** between political party and number of deportations.** 
     '''    
     st.write(text1)
 
