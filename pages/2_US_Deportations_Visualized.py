@@ -26,7 +26,7 @@ df_dem = df_visual_recent[df_visual_recent['Political Party']=='Democrat']
 
 
 fig3 = px.histogram(df_dem, x="Total Deportations",nbins=10,title="Distribution of the number of deportations a year per Democrat presidential administration",
-                    color_discrete_sequence=['Blue']))
+                    color_discrete_sequence=['blue'])
 
 fig3.update_layout(bargap=0.2)
 
