@@ -95,10 +95,10 @@ def main():
     text2 = '''
     This sections uses a statiscal test called ANOVA to look at correlations in categorical data.
     **Hypothesis**
-    - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
-    - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
+    \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
+    \n - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
 
-    **Results**
+    \n **Results**
     This dataset qualifies for an ANOVA test since there is over 30 data points in each category with:
      \n - Number of Democrat years in the dataset = 43
      \n - Number of Republican years in the dataset = 39
