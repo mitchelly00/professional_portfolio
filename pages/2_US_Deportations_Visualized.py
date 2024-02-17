@@ -74,10 +74,16 @@ def main():
     st.title(':earth_americas: US Deportations Visualized')
 
     text1 = '''
-    Undocumented immigration to the US has been a common news headline in national politics. This page clarifies how
-    immigration policy is different (or similar) between political parties. 
+    **Abstract**
+    Undocumented immigration to the US has been a common news headline in national politics. This page asks if there is a difference between 
+    undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is no correlation between political party and number of deportations. 
 
-    The results of the quick analysis show that there is no correlation between political party and number of deportations. 
+    **Hypothesis**
+    - Null Hypothesis = there is no difference in undocumented immigration between Republican and Democratic Presidential administrations
+    - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of undocumented immigration
+
+
+    
 
     The ****Exploratory Analysis**** section will show general trends over time in deportations using two different graphs.
 
