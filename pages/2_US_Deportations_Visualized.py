@@ -76,7 +76,7 @@ def main():
     st.header("Abstract")
     text1 = '''
     \n Undocumented immigration to the US has been a common news headline in national politics. This page asks if there is a difference between 
-    undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is no correlation between political party and number of deportations. 
+    undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is **no correlation between political party and number of deportations.** 
     '''    
     st.write(text1)
 
@@ -93,7 +93,7 @@ def main():
     text2 = '''
     This sections shows a statiscal test called ANOVA to look at correlations in categorical data.
      \n **Hypothesis**
-    - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
+    \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
     - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
 
     **Results**
