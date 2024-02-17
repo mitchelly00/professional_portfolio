@@ -88,8 +88,8 @@ def main():
     '''
     st.write(text_ea)
     
-    st.plotly_chart(fig3,use_container_width=True)
-    st.plotly_chart(fig4,use_container_width=True)
+    # st.plotly_chart(fig3,use_container_width=True)
+    # st.plotly_chart(fig4,use_container_width=True)
 
     st.plotly_chart(fig,use_container_width=True)
     st.plotly_chart(fig2,use_container_width=True)
@@ -99,8 +99,8 @@ def main():
     text2 = '''
     This sections uses a statiscal test called ANOVA to look at correlations in categorical data.
     \n**Hypothesis**
-    \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
-    \n - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
+    \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic presidential administrations
+    \n - Alternate Hypothesis = there is a difference between Republican and Democratic presidental administrations in terms of numbers of deportations
     '''
     st.write(text2)
 
