@@ -129,18 +129,11 @@ def main():
     \n - The ANOVA statistic (F-value) compares the variability between groups to the variability within groups. A larger F-value indicates greater differences between group means relative to differences within groups.
     \n - Since the p-value (0.2526) is greater than the alpha level (0.05), we fail to reject the null hypothesis.
     \n - The null hypothesis in ANOVA states that there are no significant differences among the group means. Therefore, in this case, we do not have sufficient evidence to conclude that there are significant differences among the group means.
-    \n In summary, based on these results, there is insufficient evidence to reject the null hypothesis. This suggests that, at the 0.05 significance level, there are no significant differences among the group means being compared.
+    \n In summary, based on these results, there is insufficient evidence to reject the null hypothesis. This suggests that there are no significant differences between political parties in terms of amount of deportation.
     '''
 
     st.write(text3)
     # Check significance
-    
-    if p_value < alpha:
-        st.write("Reject the null hypothesis. There are significant differences between groups.")
-    else:
-        st.write("Fail to reject the null hypothesis. There are no significant differences between Political Parties in terms of amount of deportation.")
-
-    
 
 
 if __name__ == '__main__':
