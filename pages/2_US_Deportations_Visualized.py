@@ -75,7 +75,7 @@ def main():
 
     text1 = '''
     **Abstract**
-    Undocumented immigration to the US has been a common news headline in national politics. This page asks if there is a difference between 
+    \n Undocumented immigration to the US has been a common news headline in national politics. This page asks if there is a difference between 
     undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is no correlation between political party and number of deportations. 
 
     **Hypothesis**
