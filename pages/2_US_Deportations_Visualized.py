@@ -79,8 +79,8 @@ def main():
     undocumented immigration rates between presidential political parties. The results of the quick analysis show that there is no correlation between political party and number of deportations. 
 
     **Hypothesis**
-    - Null Hypothesis = there is no difference in undocumented immigration between Republican and Democratic Presidential administrations
-    - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of undocumented immigration
+    - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
+    - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
 
 
     
