@@ -126,7 +126,7 @@ def main():
 
     text3 = '''
     Now, to interpret these results:
-    \n - The ANOVA statistic (F-value) compares the variability between groups to the variability within groups. A larger F-value indicates greater differences between group means relative to differences within groups.
+    \n - The ANOVA statistic (F-value) compares the variability between groups to the variability within groups. A larger F-value indicates greater differences between group means relative to differences within groups. It generally takes a F value greater than 2.5 to be statistically signifigant
     \n - Since the p-value (0.2526) is greater than the alpha level (0.05), we fail to reject the null hypothesis.
     \n - The null hypothesis in ANOVA states that there are no significant differences among the group means. Therefore, in this case, we do not have sufficient evidence to conclude that there are significant differences among the group means.
     \n In summary, based on these results, there is insufficient evidence to reject the null hypothesis. This suggests that there are no significant differences between political parties in terms of amount of deportation.
