@@ -101,18 +101,24 @@ def main():
     \n**Hypothesis**
     \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
     \n - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
-
-    \n **Test**
-    \n This dataset qualifies for an ANOVA test since there is over 30 data points in each category with:
-     \n - Number of Democrat years in the dataset = 43
-     \n - Number of Republican years in the dataset = 39
     '''
     st.write(text2)
 
     
     alpha = 0.05
 
-    st.header("Results")
+    st.header("Statistical Test")
+    text_stat = '''
+    \n **Test Qualifications**
+    \n This dataset qualifies for an ANOVA test since there is over 30 data points in each category with:
+    \n - Number of Democrat years in the dataset = 43
+    \n - Number of Republican years in the dataset = 39
+    \n
+    \n**Results**
+    \n
+    '''
+
+    st.write(text_stat)
 
     st.write("ANOVA Statistic:",statistic)
     st.write("P-value:",p_value)
