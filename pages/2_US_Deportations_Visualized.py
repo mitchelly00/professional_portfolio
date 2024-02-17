@@ -93,9 +93,9 @@ def main():
     st.header("Hypothesis Testing")
 
     text2 = '''
-    This sections shows a statiscal test called ANOVA to look at correlations in categorical data.
+    This sections uses a statiscal test called ANOVA to look at correlations in categorical data.
      \n **Hypothesis**
-    \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
+    - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
     - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
 
     **Results**
