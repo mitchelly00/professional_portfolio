@@ -71,6 +71,7 @@ def main():
     
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
+    st.image('pics\immigration.png')
     st.title(':earth_americas: US Deportations Visualized')
 
     st.header("Abstract")
