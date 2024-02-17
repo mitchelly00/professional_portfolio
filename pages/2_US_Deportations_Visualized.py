@@ -87,6 +87,10 @@ def main():
     text_ea = '''This section will show general trends over time in deportations using two different graphs.
     '''
     st.write(text_ea)
+    
+    st.plotly_chart(fig3,use_container_width=True)
+    st.plotly_chart(fig4,use_container_width=True)
+
     st.plotly_chart(fig,use_container_width=True)
     st.plotly_chart(fig2,use_container_width=True)
 
@@ -98,14 +102,13 @@ def main():
     \n - Null Hypothesis = there is no difference in deportations between Republican and Democratic Presidential administrations
     \n - Alternate Hypothesis = there is a difference between Republican and Democratic presadministration in terms of numbers of deportations
 
-    \n **Results**
+    \n **Test**
     \n This dataset qualifies for an ANOVA test since there is over 30 data points in each category with:
      \n - Number of Democrat years in the dataset = 43
      \n - Number of Republican years in the dataset = 39
     '''
     st.write(text2)
-    st.plotly_chart(fig3,use_container_width=True)
-    st.plotly_chart(fig4,use_container_width=True)
+
     
     alpha = 0.05
 
@@ -124,6 +127,8 @@ def main():
 
     In summary, based on these results, there is insufficient evidence to reject the null hypothesis. This suggests that, at the 0.05 significance level, there are no significant differences among the group means being compared.
     '''
+
+    st.write(text3)
     # Check significance
     
     if p_value < alpha:
