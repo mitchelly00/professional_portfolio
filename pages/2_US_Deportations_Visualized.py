@@ -16,13 +16,7 @@ df_visual_recent = df_visual[df_visual['Year']>1940]
 fig = px.bar(df_visual_recent, x='Year', y='Total Deportations',color='Political Party',
              title='Deportations in the US from Government Fiscal Year 1940-2022', color_discrete_sequence=['blue','indianred'])
 
-#####################################################################################
-# fig showing the total deportations by political party
 
-
-fig2 = px.bar(df_visual_recent, x='Political Party', y='Total Deportations',
-              color='Political Party',title='Total deportations by political parties in the US from Government Fiscal Year 1940-2022',
-              color_discrete_sequence=['blue','indianred'])
 
 ###################################################################
 #Hypothesis testing
@@ -49,6 +43,23 @@ fig4.update_layout(bargap=0.2)
 df_dem_values = df_dem['Total Deportations']
 df_rep_values = df_rep['Total Deportations']
 statistic, p_value = f_oneway(df_dem_values, df_rep_values)
+
+#####################################################################################
+# fig showing the total deportations by political party
+
+# initialize list of lists
+data_party = [['Democrat', np.sum(df_dem_values)], ['Republican', np.sum(df_rep_values)]]
+
+# Create the pandas DataFrame
+df_totals = pd.DataFrame(data_party, columns=['Party', 'Total Deportations'])
+
+
+
+fig2 = px.bar(df_totals, x='Party', y='Total Deportations',
+              color='Party',title='Total deportations by political parties in the US from Government Fiscal Year 1940-2022',
+              color_discrete_sequence=['blue','indianred'])
+
+
 
 ##########################################################################################################
 #streamlit application 
