@@ -65,7 +65,7 @@ def main():
         "card": {
             "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
             "height": "300px", # <- if you want to set the card height to 300px
-            "border-radius": "60px"
+            "border-radius": "20px"
         }})
     
 #Immigration Content card
