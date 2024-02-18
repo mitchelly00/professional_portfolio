@@ -1,5 +1,5 @@
 import streamlit as st
-from htmlTemplates import css, hide_streamlit_style
+from htmlTemplates import css,data_ucwdc, hide_streamlit_style
 from streamlit_card import card
 import base64
 def main():
@@ -58,18 +58,26 @@ def main():
     '''
     st.markdown(text2, unsafe_allow_html=True)
 
-    filepath = "pics/ucwdc_without_words.png"
 
-    with open(filepath, "rb") as f:
-        data = f.read()
-        encoded = base64.b64encode(data)
-    data = "data:image/png;base64," + encoded.decode("utf-8")
-
+#UCWDC content card
     hasClicked = card(
   title="Country Dance Chatbot",
   text="an LLM application that answers your questions from the UCWDC country dance rules",
-  image= data,
+  image= data_ucwdc,
   url="/Country_Dance_Chatbot",
+  styles={
+        "card": {
+            "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+            "height": "300px" # <- if you want to set the card height to 300px
+        }})
+    
+#Immigration Content card
+
+    hasClicked = card(
+  title="US Deportations by Political Party",
+  text="statistical test between immigration and pesidential administrations' political party",
+  image= data_ucwdc,
+  url="/US_Deportations_by_Political_Party",
   styles={
         "card": {
             "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
