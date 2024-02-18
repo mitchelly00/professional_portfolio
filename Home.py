@@ -70,18 +70,18 @@ def main():
                     }})
     
 #Immigration Content card
-
-    hasClicked = card(
-  title="US Deportations by Political Party",
-  text="statistical test between immigration and pesidential administrations' political party",
-  image= data_immigration,
-  url="/US_Deportations_by_Political_Party",
-  styles={
-        "card": {
-            "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
-            "height": "300px", # <- if you want to set the card height to 300px
-            "border-radius": "10px"
-        }})
+    with st.container():
+        hasClicked = card(
+            title="US Deportations by Political Party",
+            text="statistical test between immigration and pesidential administrations' political party",
+            image= data_immigration,
+            url="/US_Deportations_by_Political_Party",
+            styles={
+                    "card": {
+                        "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+                        "height": "300px", # <- if you want to set the card height to 300px
+                        "border-radius": "10px"
+                    }})
     
 
 
