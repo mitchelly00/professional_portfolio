@@ -2,6 +2,8 @@ import streamlit as st
 from htmlTemplates import css, bot_template, user_template, hide_streamlit_style
 
 def main():
+    st.set_page_config(page_title="MJ Schonhoeft",
+                       page_icon="pics/logo_home.png")
     
     #adding custom markdown for navigation bar
     st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
@@ -27,9 +29,6 @@ def main():
     </div>
     </nav>
     """, unsafe_allow_html=True)
-
-    st.set_page_config(page_title="MJ Schonhoeft",
-                       page_icon="pics/logo_home.png")
     
     st.image("pics/home_background.png")
     
