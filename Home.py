@@ -56,29 +56,29 @@ def main():
 
 
 #UCWDC content card
-    with st.container():
-        card1 = card(
-            title="Country Dance Chatbot",
-            text="an LLM application that answers your questions from the UCWDC country dance rules",
-            image= data_ucwdc,
-            url="/Country_Dance_Chatbot",
-            styles={
-                    "card": {
-                        "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
-                        "height": "300px", # <- if you want to set the card height to 300px
-                        "border-radius": "10px"
-                    }})
-        card2 = card(
-            title="US Deportations by Political Party",
-            text="statistical test between immigration and pesidential administrations' political party",
-            image= data_immigration,
-            url="/US_Deportations_by_Political_Party",
-            styles={
-                    "card": {
-                        "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
-                        "height": "300px", # <- if you want to set the card height to 300px
-                        "border-radius": "10px"
-                    }})
+    # with st.container():
+    #     card1 = card(
+    #         title="Country Dance Chatbot",
+    #         text="an LLM application that answers your questions from the UCWDC country dance rules",
+    #         image= data_ucwdc,
+    #         url="/Country_Dance_Chatbot",
+    #         styles={
+    #                 "card": {
+    #                     "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+    #                     "height": "300px", # <- if you want to set the card height to 300px
+    #                     "border-radius": "10px"
+    #                 }})
+    #     card2 = card(
+    #         title="US Deportations by Political Party",
+    #         text="statistical test between immigration and pesidential administrations' political party",
+    #         image= data_immigration,
+    #         url="/US_Deportations_by_Political_Party",
+    #         styles={
+    #                 "card": {
+    #                     "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+    #                     "height": "300px", # <- if you want to set the card height to 300px
+    #                     "border-radius": "10px"
+    #                 }})
         
     tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
