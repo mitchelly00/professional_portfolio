@@ -5,6 +5,8 @@ def main():
     st.set_page_config(page_title="MJ Schonhoeft",
                        page_icon="pics/Logo small With background 2.png")
     
+    st.image("pics/home_banner.png")
+    
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
 
