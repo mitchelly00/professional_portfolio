@@ -42,7 +42,6 @@ def main():
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
 
-    st.markdown('<a href="/Country_Dance_Chatbot" target="_self">Country Dance</a>', unsafe_allow_html=True)
 
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
@@ -52,7 +51,7 @@ def main():
     st.header("Projects:")
     text2 = '''<a href="/Country_Dance_Chatbot" target="_self">Country Dance Chatbot</a> 
     \n - This is an LLM application that answers your questions from the UCWDC country dance rules.
-    \nUS Deportations Visualized
+    \n<a href="/US_Deportations_Visualized" target="_self">US Deportations by Political Party</a> 
     \n - This data project shows the correlation between immigration and pesidential administrations' political party
     '''
     st.markdown(text2, unsafe_allow_html=True)
