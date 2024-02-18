@@ -74,7 +74,8 @@ def handle_userinput(user_question):
 def main():
     
     st.set_page_config(page_title="Chat with the UCWDC Rules",
-                       page_icon="pics/logo_chatbot.png")
+                       page_icon="pics/logo_chatbot.png",
+                       layout="wide")
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
 
