@@ -1,5 +1,5 @@
 import streamlit as st
-from htmlTemplates import css, bot_template, user_template, hide_streamlit_style
+from htmlTemplates import css, data, hide_streamlit_style
 from streamlit_card import card
 
 def main():
@@ -61,7 +61,7 @@ def main():
     hasClicked = card(
   title="Country Dance Chatbot",
   text="an LLM application that answers your questions from the UCWDC country dance rules",
-  image="http://placekitten.com/200/300",
+  image= data,
   url="/Country_Dance_Chatbot",
   styles={
         "card": {
