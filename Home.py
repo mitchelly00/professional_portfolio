@@ -42,6 +42,8 @@ def main():
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
 
+    st.markdown('<a href="/Country_Dance_Chatbot" target="_self">Country Dance</a>', unsafe_allow_html=True)
+
     #st.markdown(streamlit_style, unsafe_allow_html=True)
     st.header("About me:")
     text = '''I am a Data Science Analyst at Deloitte and am passionate about creating AI applications that best serve the needs of end users.
