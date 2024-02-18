@@ -58,12 +58,4 @@ hide_streamlit_style = """
             </style>"""
 
 
-streamlit_style = """
-			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-			html, body, [class*="css"]  {
-			font-family: 'Roboto', sans-serif;
-			}
-			</style>
-			"""
