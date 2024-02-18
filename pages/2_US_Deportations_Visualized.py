@@ -67,7 +67,7 @@ fig2 = px.bar(df_totals, x='Party', y='Total Deportations',
 
 def main():
     st.set_page_config(page_title="US Deportations Visualized",
-                       page_icon=":earth_americas:")
+                       page_icon="pics/logo_imm.png")
     
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
