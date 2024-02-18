@@ -60,10 +60,5 @@ hide_streamlit_style = """
             #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}
             </style>"""
 
-filepath = "pics\ucwdc.png"
 
-with open(filepath, "rb") as f:
-    data = f.read()
-    encoded = base64.b64encode(data)
-data = "data:image/png;base64," + encoded.decode("utf-8")
         

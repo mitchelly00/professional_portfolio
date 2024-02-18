@@ -1,7 +1,7 @@
 import streamlit as st
-from htmlTemplates import css, data, hide_streamlit_style
+from htmlTemplates import css, hide_streamlit_style
 from streamlit_card import card
-
+import base64
 def main():
     st.set_page_config(page_title="MJ Schonhoeft",
                        page_icon="pics/logo_home.png",
@@ -58,6 +58,13 @@ def main():
     '''
     st.markdown(text2, unsafe_allow_html=True)
 
+    filepath = "pics\ucwdc.png"
+
+    with open(filepath, "rb") as f:
+        data = f.read()
+        encoded = base64.b64encode(data)
+    data = "data:image/png;base64," + encoded.decode("utf-8")
+
     hasClicked = card(
   title="Country Dance Chatbot",
   text="an LLM application that answers your questions from the UCWDC country dance rules",
@@ -68,6 +75,7 @@ def main():
             "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
             "height": "300px" # <- if you want to set the card height to 300px
         }})
+    
 
 
 if __name__ == '__main__':
