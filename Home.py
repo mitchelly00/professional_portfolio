@@ -56,7 +56,7 @@ def main():
 
 
 #UCWDC content card
-    with st.container():
+    with st.container(border = True):
         card1 = card(
             title="Country Dance Chatbot",
             text="an LLM application that answers your questions from the UCWDC country dance rules",
