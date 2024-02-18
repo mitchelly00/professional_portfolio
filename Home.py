@@ -55,7 +55,7 @@ def main():
     \nUS Deportations Visualized
     \n - This data project shows the correlation between immigration and pesidential administrations' political party
     '''
-    st.markdown(text2)
+    st.markdown(text2, unsafe_allow_html=True)
 
 
 if __name__ == '__main__':
