@@ -58,7 +58,7 @@ def main():
     '''
     st.markdown(text2, unsafe_allow_html=True)
 
-    filepath = "pics/ucwdc.png"
+    filepath = "pics/ucwdc_without_words.png"
 
     with open(filepath, "rb") as f:
         data = f.read()
