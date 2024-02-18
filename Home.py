@@ -44,12 +44,12 @@ def main():
 
 
     #st.markdown(streamlit_style, unsafe_allow_html=True)
-    st.header("About me:")
+    st.header("About me")
     text = '''I am a Data Science Analyst at Deloitte and am passionate about creating AI applications that best serve the needs of end users.
     '''
     st.markdown(text)
-    st.header("Projects:")
-    text2 = ''' Click on any link below to see each project.
+    st.header("Projects")
+    text2 = ''' Click on any link below to see each project:
     \n <a href="/Country_Dance_Chatbot" target="_self">Country Dance Chatbot</a> 
     \n - This is an LLM application that answers your questions from the UCWDC country dance rules.
     \n<a href="/US_Deportations_by_Political_Party" target="_self">US Deportations by Political Party</a> 
