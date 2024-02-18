@@ -80,7 +80,7 @@ def main():
     #                     "border-radius": "10px"
     #                 }})
         
-    tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
+    tab1, tab2 = st.tabs(["Country Dance Chatbot", "US Deportations by Political Party"])
 
     with tab1:
         card3 = card(
