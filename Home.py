@@ -57,7 +57,7 @@ def main():
 
 #UCWDC content card
     with st.container():
-        hasClicked = card(
+        card(
             title="Country Dance Chatbot",
             text="an LLM application that answers your questions from the UCWDC country dance rules",
             image= data_ucwdc,
@@ -71,7 +71,7 @@ def main():
     
 #Immigration Content card
     with st.container():
-        hasClicked = card(
+        card(
             title="US Deportations by Political Party",
             text="statistical test between immigration and pesidential administrations' political party",
             image= data_immigration,
