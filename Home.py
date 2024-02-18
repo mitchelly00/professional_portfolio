@@ -59,10 +59,10 @@ def main():
     st.markdown(text2, unsafe_allow_html=True)
 
     hasClicked = card(
-  title="Hello World!",
-  text="Some description",
+  title="Country Dance Chatbot",
+  text="an LLM application that answers your questions from the UCWDC country dance rules",
   image="http://placekitten.com/200/300",
-  url="https://github.com/gamcoh/st-card")
+  url="http://mjschonhoeft.com/Country_Dance_Chatbot")
 
 
 if __name__ == '__main__':
