@@ -83,8 +83,17 @@ def main():
     tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
 
     with tab1:
-        st.header("A cat")
-        st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
+        card1 = card(
+            title="Country Dance Chatbot",
+            text="an LLM application that answers your questions from the UCWDC country dance rules",
+            image= data_ucwdc,
+            url="/Country_Dance_Chatbot",
+            styles={
+                    "card": {
+                        "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+                        "height": "300px", # <- if you want to set the card height to 300px
+                        "border-radius": "10px"
+                    }})
 
     with tab2:
         st.header("A dog")
