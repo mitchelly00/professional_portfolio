@@ -52,8 +52,8 @@ user_template = '''
 
 hide_streamlit_style = """
             <style>
+            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}
             </style>"""
-
-#            #MainMenu {visibility: hidden;}
+        
