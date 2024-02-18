@@ -82,7 +82,7 @@ def main():
     
 #Immigration Content card
     with st.container():
-        card(
+        card3 = card(
             title="US Deportations by Political Party",
             text="statistical test between immigration and pesidential administrations' political party",
             image= data_immigration,
