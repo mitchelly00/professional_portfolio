@@ -57,7 +57,7 @@ def main():
 
 #UCWDC content card
     with st.container():
-        card(
+        card1 = card(
             title="Country Dance Chatbot",
             text="an LLM application that answers your questions from the UCWDC country dance rules",
             image= data_ucwdc,
@@ -68,7 +68,7 @@ def main():
                         "height": "300px", # <- if you want to set the card height to 300px
                         "border-radius": "10px"
                     }})
-        card(
+        card2 = card(
             title="US Deportations by Political Party",
             text="statistical test between immigration and pesidential administrations' political party",
             image= data_immigration,
