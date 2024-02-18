@@ -66,4 +66,11 @@ with open(filepath, "rb") as f:
     data = f.read()
     encoded = base64.b64encode(data)
 data_ucwdc = "data:image/png;base64," + encoded.decode("utf-8")
-        
+
+filepath2 = "pics/immigration_without_words.png"
+
+with open(filepath2, "rb") as f:
+    data = f.read()
+    encoded = base64.b64encode(data)
+data_immigration = "data:image/png;base64," + encoded.decode("utf-8")
+                
