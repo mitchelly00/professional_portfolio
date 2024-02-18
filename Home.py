@@ -10,12 +10,12 @@ def main():
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
 
-    colT1,colT2,colT3,colT4 = st.columns(4)
-    with colT2:
-        st.image('pics/croped.png',width=150)
+    # colT1,colT2,colT3,colT4 = st.columns(4)
+    # with colT2:
+    #     st.image('pics/croped.png',width=150)
 
-    with colT3:
-        st.title('MJ Schonhoeft')
+    # with colT3:
+    #     st.title('MJ Schonhoeft')
         
 
     #st.markdown(streamlit_style, unsafe_allow_html=True)
