@@ -3,8 +3,9 @@ from htmlTemplates import css, bot_template, user_template, hide_streamlit_style
 
 def main():
     st.set_page_config(page_title="MJ Schonhoeft",
-                       page_icon="pics/logo_home.png",
-                       initial_sidebar_state="collapsed")
+                       page_icon="pics/logo_home.png"
+                       #initial_sidebar_state="collapsed"
+                       )
     
     #collpasing the side navebar
     
