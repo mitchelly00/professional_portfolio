@@ -54,8 +54,8 @@ hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            </style>
-            """
+            #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem;}"""
+
 
 streamlit_style = """
 			<style>
