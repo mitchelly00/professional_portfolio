@@ -1,5 +1,6 @@
 import streamlit as st
 from htmlTemplates import css, bot_template, user_template, hide_streamlit_style
+from streamlit_card import card
 
 def main():
     st.set_page_config(page_title="MJ Schonhoeft",
@@ -56,6 +57,12 @@ def main():
     \n - This data project shows the correlation between immigration and pesidential administrations' political party
     '''
     st.markdown(text2, unsafe_allow_html=True)
+
+    hasClicked = card(
+  title="Hello World!",
+  text="Some description",
+  image="http://placekitten.com/200/300",
+  url="https://github.com/gamcoh/st-card")
 
 
 if __name__ == '__main__':
