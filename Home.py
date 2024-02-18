@@ -50,7 +50,7 @@ def main():
     '''
     st.markdown(text)
     st.header("Projects:")
-    text2 = '''Country Dance ChatBot 
+    text2 = '''<a href="/Country_Dance_Chatbot" target="_self">Country Dance Chatbot</a>' 
     \n - This is an LLM application that answers your questions from the UCWDC country dance rules.
     \nUS Deportations Visualized
     \n - This data project shows the correlation between immigration and pesidential administrations' political party
