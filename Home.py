@@ -62,7 +62,7 @@ def main():
   title="Country Dance Chatbot",
   text="an LLM application that answers your questions from the UCWDC country dance rules",
   image="http://placekitten.com/200/300",
-  url="http://mjschonhoeft.com/Country_Dance_Chatbot",
+  url="/Country_Dance_Chatbot",
   styles={
         "card": {
             "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
