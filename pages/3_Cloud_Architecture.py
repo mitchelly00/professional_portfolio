@@ -7,6 +7,7 @@ def main():
                        layout="wide")
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
+    st.image('pics/cloud.png')
 
 
 if __name__ == '__main__':
