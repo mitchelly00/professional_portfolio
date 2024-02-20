@@ -108,8 +108,8 @@ def main():
                         "border-radius": "10px"
                     }})
     
-    with tab2:
-        card4 = card(
+    with tab3:
+        card5 = card(
             title="Cloud Architecture",
             text="Diagrams to show the architecture for this application",
             image= data_cloud,
