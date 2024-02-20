@@ -1,5 +1,5 @@
 import streamlit as st
-from htmlTemplates import css
+from htmlTemplates import css, hide_streamlit_style
 
 def main():
     st.set_page_config(page_title="Cloud Architecture",
@@ -8,6 +8,7 @@ def main():
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
     st.image('pics/cloud.png')
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 if __name__ == '__main__':
