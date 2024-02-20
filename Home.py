@@ -1,5 +1,5 @@
 import streamlit as st
-from htmlTemplates import css,data_ucwdc,data_immigration, hide_streamlit_style
+from htmlTemplates import css,data_ucwdc,data_immigration, hide_streamlit_style, data_cloud
 from streamlit_card import card
 import base64
 def main():
@@ -80,7 +80,7 @@ def main():
     #                     "border-radius": "10px"
     #                 }})
         
-    tab1, tab2 = st.tabs(["Country Dance Chatbot", "US Deportations by Political Party"])
+    tab1, tab2, tab3 = st.tabs(["Country Dance Chatbot", "US Deportations by Political Party", "Cloud Architecture"])
 
     with tab1:
         card3 = card(
@@ -108,6 +108,18 @@ def main():
                         "border-radius": "10px"
                     }})
     
+    with tab2:
+        card4 = card(
+            title="Cloud Architecture",
+            text="Diagrams to show the architecture for this application",
+            image= data_cloud,
+            url="/US_Deportations_by_Political_Party",
+            styles={
+                    "card": {
+                        "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
+                        "height": "300px", # <- if you want to set the card height to 300px
+                        "border-radius": "10px"
+                    }})
 
     
 #Immigration Content card
