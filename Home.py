@@ -113,7 +113,7 @@ def main():
             title="Cloud Architecture",
             text="Diagrams to show the architecture for this application",
             image= data_cloud,
-            url="/US_Deportations_by_Political_Party",
+            url="/Cloud_Architecture",
             styles={
                     "card": {
                         "width": "100%", # <- make the card use the width of its container, note that it will not resize the height of the card automatically
