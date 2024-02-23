@@ -91,7 +91,7 @@ def main():
 
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
-    \n - If you have any comments or feedback. I would love to hear about it [here.](https://forms.gle/KYjH5rH17Rzr2Phy7)
+    \n - If you have any comments or feedback. I would love to hear about it [here](https://forms.gle/KYjH5rH17Rzr2Phy7)
     '''
     expander.write(text3)
 
@@ -99,7 +99,7 @@ def main():
     text4 =  '''
     \n - Use the task bar below to ask questions about the UCWDC rules
     \n - An example could be: "Name the 6 different line dance styles"
-    \n - If you have any comments or feedback. I would love to hear about it [here.] (https://forms.gle/KYjH5rH17Rzr2Phy7) '''
+    \n - If you have any comments or feedback. I would love to hear about it [here](https://forms.gle/KYjH5rH17Rzr2Phy7) '''
     expander2.write(text4)
     st.text(" ")
     
