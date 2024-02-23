@@ -15,10 +15,11 @@ def main():
     st.header('Overview')
     st.image('pics/aws_diagram_1.png')
     text1 = '''
-    This application is hosted on an EC2 instnce that is routed through an Application Load Balancer.
-    The Load Balancer automatically redirects all HTTP traffic to HTTPS traffic.
-    The load balancer has an HTTPS Certificate through AWS Certificate Manager. Finally Route 53
-    is the the DNS server. 
+    This application's general architecture is as follows:
+    \n - **EC2** the instance connects to an Application Load Balancer
+    \n - **Application Load Balancer** automatically redirects all HTTP traffic to HTTPS traffic.
+    \n      - The load balancer has an HTTPS Certificate through AWS Certificate Manager. 
+    \n - **Route 53** routes DNS traffic to the APplication Load Balancer
     '''
     st.markdown(text1)
 
@@ -26,7 +27,7 @@ def main():
     st.header('EC2 structure')
     st.image('pics/aws_diagram_2.png')
     text2 = '''
-    This application has server important networking elements. 
+    This application has several important EC2 elements. 
     \n - **TMUX** ensures a consistant session. TMUX allows me to disconnect from a session without terminating running streamlit processes.
     \n - **NGINX** servers as a  reverse proxy to convert outward bound traffic from 8502 to port 80 (HTTP) to connect to the Application Load Balancer.
     \n - **OPENAI API** The application calls the OPENAI API to power the chatbot.
