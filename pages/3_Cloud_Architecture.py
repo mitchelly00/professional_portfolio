@@ -15,11 +15,13 @@ def main():
     st.header('Overview')
     st.image('pics/aws_diagram_1.png')
     text1 = '''
+    Above is the general architecture of the current web application you are viewing. 
+    \n 
     This application's general architecture is as follows:
     \n - **EC2** the instance connects to an Application Load Balancer
     \n - **Application Load Balancer** automatically redirects all HTTP traffic to HTTPS traffic.
     \n      - The load balancer has an HTTPS Certificate through AWS Certificate Manager. 
-    \n - **Route 53** routes DNS traffic to the APplication Load Balancer
+    \n - **Route 53** routes DNS traffic to the Application Load Balancer
     '''
     st.markdown(text1)
 
