@@ -97,7 +97,7 @@ def main():
     expander2 = st.expander("Directions")
     text4 =  '''
     \n - Use the task bar below to ask questions about the UCWDC rules
-    \n - An example could be: "Name the 6 different line dance styles". '''
+    \n - An example could be: "Name the 6 different line dance styles" '''
     expander2.write(text4)
     st.text(" ")
     
