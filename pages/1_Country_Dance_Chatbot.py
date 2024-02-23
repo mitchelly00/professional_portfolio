@@ -86,12 +86,16 @@ def main():
 
     st.image('pics/ucwdc.png')
 
+    expander = st.expander("Disclaimer")
+    
+
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
     \nDirections:
     \n - Use the task bar below to ask questions about the UCWDC rules
     \n - An example could be: "Name the 6 different line dance styles"
     '''
+    expander.write(text3)
 
     colT1,colT2 = st.columns([1,10])
     with colT2:
