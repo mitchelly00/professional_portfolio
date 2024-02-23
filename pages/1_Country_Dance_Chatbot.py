@@ -91,11 +91,15 @@ def main():
 
     text3 = '''Disclaimer:
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here.](https://ucwdc.org/rules/)
-    \nDirections:
-    \n - Use the task bar below to ask questions about the UCWDC rules
-    \n - An example could be: "Name the 6 different line dance styles"
     '''
     expander.write(text3)
+
+    expander2 = st.expander("Directions")
+    text4 =  '''
+    \n - Use the task bar below to ask questions about the UCWDC rules
+    \n - An example could be: "Name the 6 different line dance styles'''
+    expander2.write(text4)
+
 
     colT1,colT2 = st.columns([1,10])
     with colT2:
