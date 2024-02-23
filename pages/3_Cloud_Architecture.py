@@ -8,14 +8,30 @@ def main():
     #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.write(css, unsafe_allow_html=True)
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-    st.header('Overview')
     st.image('pics/cloud.png')
 
-    st.header('EC2 structure')
 
+    #overview
+    st.header('Overview')
     st.image('pics/aws_diagram_1.png')
-    st.image('pics/aws_diagram_2.png')
+    text1 = '''
+    This application is hosted on an EC2 instnce that is routed through an Application Load Balancer.
+    The Load Balancer automatically redirects all HTTP traffic to HTTPS traffic.
+    The load balancer has an HTTPS Certificate through AWS Certificate Manager. Finally Route 53
+    is the the DNS server. 
+    '''
+    st.markdown(text1)
 
+    # EC2 
+    st.header('EC2 structure')
+    st.image('pics/aws_diagram_2.png')
+    text2 = '''
+    This application has server important networking elements. 
+    \n - **TMUX** ensures a consistant session. TMUX allows me to disconnect from a session without terminating running streamlit processes.
+    \n - **NGINX** servers as a  reverse proxy to convert outward bound traffic from 8502 to port 80 (HTTP) to connect to the Application Load Balancer.
+    \n - **OPENAI API** The application calls the OPENAI API to power the chatbot.
+    '''
+    st.markdown(text2)
 
 if __name__ == '__main__':
     main()    
