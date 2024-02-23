@@ -89,7 +89,7 @@ def main():
     expander = st.expander("Disclaimer")
     
 
-    text3 = '''Disclaimer:
+    text3 = '''
     \n - This tool is not affliated with the UCWDC. The answers are non binding. Please consult the rules [here](https://ucwdc.org/rules/)
     \n - If you have any comments or feedback. I would love to hear about it [here](https://forms.gle/KYjH5rH17Rzr2Phy7)
     '''
