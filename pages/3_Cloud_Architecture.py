@@ -9,6 +9,8 @@ def main():
     st.write(css, unsafe_allow_html=True)
     st.image('pics/cloud.png')
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    st.image('pics/aws_diagram_1.png')
+    st.image('pics/aws_diagram_2.png')
 
 
 if __name__ == '__main__':
