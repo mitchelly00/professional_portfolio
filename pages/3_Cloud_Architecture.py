@@ -35,7 +35,7 @@ def main():
     \n - **NGINX** servers as a  reverse proxy to convert outward bound traffic from 8502 to port 80 (HTTP) to connect to the Application Load Balancer.
     \n - **OPENAI API** The application calls the OPENAI API to power the chatbot.
     \n
-    \n Click [here](https://https://github.com/mitchelly00/professional_portfolio) for the github repository for this project. 
+    \n Click [here](https://github.com/mitchelly00/professional_portfolio) for the github repository for this project. 
     '''
     st.markdown(text2, unsafe_allow_html=True)
 
